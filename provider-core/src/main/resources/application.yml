@@ -1,6 +1,17 @@
 spring:
   application:
     name: provider
+  redis:
+    database: 0
+    host: 47.100.249.163
+    port: 6379
+    password: wework2018a
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+    timeout: 0
 
 eureka:
   client:
@@ -12,3 +23,18 @@ eureka:
 
 server:
   port: 8000
+
+#####rocket-mq######
+apache:
+  rocketmq:
+    consumer:
+      PushConsumer: victor_test
+      instacneName: victor_test_Consumer
+    producer:
+      producerGroup: victor_test_Producer
+      instacneName: victor_test_Producer
+    namesrvAddr: 47.100.249.163:9876
+    topic: VictorTest
+    tag: VictorTest
+#####rocket-mq######
+
