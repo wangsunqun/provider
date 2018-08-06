@@ -1,4 +1,4 @@
-package com.wsq.providercore;
+package com.wsq.userservice;
 
 import com.wsq.common.serviceStandard.ServiceStandard;
 import org.springframework.boot.SpringApplication;

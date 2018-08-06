@@ -1,10 +1,8 @@
-package com.wsq.providercore.controller;
+package com.wsq.userservice.controller;
 
-import com.wsq.common.cache.CacheService;
-import com.wsq.common.cache.CacheType;
-import com.wsq.common.rocketmq.Producer;
 import com.wsq.providerapi.dto.UserDto;
 import com.wsq.providerapi.feignInterface.UserInterface;
+import com.wsq.userservice.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,17 +15,12 @@ public class UserController implements UserInterface {
     private String port;
 
     @Autowired
-    private CacheService cacheService;
-
-    @Autowired
-    private Producer producer;
+    private UserServiceImpl userService;
 
     @Override
     public UserDto getUserById(@RequestParam("id") long id) {
         System.out.println("请求进来了");
-        UserDto userDto = new UserDto(1, "王孙群");
-        cacheService.add("user1", userDto, 60, CacheType.PASSPORT);
-        UserDto result = cacheService.get("user1", CacheType.PASSPORT);
+        UserDto result = userService.getUserById(1);
         return result;
     }
 }
