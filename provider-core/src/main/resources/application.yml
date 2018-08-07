@@ -5,7 +5,7 @@ spring:
     database: 0
     host: 47.100.249.163
     port: 6379
-    password: wework2018a
+    password: wework2018
     pool:
       max-active: 8
       max-wait: -1
