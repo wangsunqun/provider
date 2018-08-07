@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wsq</groupId>
-	<artifactId>provider</artifactId>
+	<artifactId>event</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -15,8 +15,8 @@
 	</parent>
 
 	<modules>
-		<module>provider-api</module>
-		<module>provider-core</module>
+		<module>event-api</module>
+		<module>event-core</module>
 	</modules>
 
 	<distributionManagement>
