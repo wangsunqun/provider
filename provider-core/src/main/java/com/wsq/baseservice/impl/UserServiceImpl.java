@@ -1,4 +1,4 @@
-package com.wsq.userservice.impl;
+package com.wsq.baseservice.impl;
 
 import com.wsq.common.cache.CacheService;
 import com.wsq.common.cache.CacheType;

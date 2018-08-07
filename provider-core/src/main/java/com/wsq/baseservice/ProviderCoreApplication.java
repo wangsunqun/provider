@@ -1,4 +1,4 @@
-package com.wsq.userservice;
+package com.wsq.baseservice;
 
 import com.wsq.common.serviceStandard.ServiceStandard;
 import org.springframework.boot.SpringApplication;
