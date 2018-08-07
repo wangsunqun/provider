@@ -1,4 +1,4 @@
-package com.wsq.providercore;
+package com.wsq.baseservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

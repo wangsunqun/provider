@@ -15,4 +15,9 @@ public class UserDto {
         this.id = id;
         this.userName = userName;
     }
+
+    @Override
+    public String toString() {
+        return "UserDto{" + "id=" + id + ", userName='" + userName + '\'' + '}';
+    }
 }
